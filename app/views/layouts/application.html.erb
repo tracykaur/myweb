@@ -1,53 +1,65 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <title>Myweb</title>
-    <%= csrf_meta_tags %>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+<html lang="en">
 
-  <body>
-    <%= render "shared/menu" %>
+<head>
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8">
-          <div class="smoothie-background rounded img-fluid">
-            <header class="window">
-              <h1>Latest Recipes</h1>
-            </header>
-          </div>
-    <%= yield %>
-  </div>
+  <title>Tracy Kaur</title>
 
-  <div class="col-lg-4">
-    <div class="card">
-          <div class="card-body">
-            <h4 class="card-title">Get my free ebook now</h4>
-            <p class="card-text">Register below for a copy.</p>
-            <form>
-              <div class="form-group">
-                <label for="exampleInputEmail1">Email address</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-              </div>
-            </div>
-              <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
-          </div>
-        </div>
+</head>
+
+<body>
+<header class="header"
+    <div class="wrapper">
+        <h1><a href="">Tracy Kaur</a>
+        </h1>
+      </div>
     </div>
-  </div>
-</div>
 
 
 
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
 
-  </body>
-</html>
+  <section class="responsive">
+    <h2>Portfolio
+    </h2>
+
+  <ul class="grid-container">
+    <li class="li1" > <img src="jazmin-quaynor-105210.jpg">
+      <h3>Coding is magic</h3> <h4>I have an immense love for coding and the reason is being able to code is like having a supernatural power, you can literally create anything from scratch.<br></br> It’s crazy how few lines of code can make a machine do anything we want. </h4>
+        <!-- If you want that the lights of your room should automatically be switched off as soon as you leave the room , if you want your mobile phone to automatically send emails and messages , even if you want to make a robot for yourself to do all the hard work , everything seems possible when you know how to program.</p> -->
+        <p> <a href="">View more.</a></p>
+    </li>
+    <li class="li2"> <img src=""> <h3>Bootstrap</h3> <p> <a href="#">View more.</a></p>
+    </li>
+      <li class="li3"> <img src="">
+        <h3>Contact Me</h3>
+          <p><div class="tweet"> <a href="https://twitter.com/tracykaur"> <img src="twitter.png" style="width:50px;height:50px;"></p>
+      </li>
+      <li class="li4"> <img src="">
+        <h3>Work Title</h3>
+        <p> <a href="#">View more.</a></p>
+      </li>
+      <li class="li5"> <img src="">
+        <h3>Ruby</h3>
+        <p> <a href="#">View more.</a></p>
+      </li>
+
+
+    </ul>
+  </section>
+
+  <section class="responsive2">
+
+    <ul class="grid-container">
+      <li>Volunteer Work <img src=""></li>
+
+      <li> Clubs<img src=""></li>
+
+      <li> Awards <img src=""> </li>
+
+      <li> <img src=""> </li>
+
+    </ul>
+
+  </section>

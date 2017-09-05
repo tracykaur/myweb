@@ -2,21 +2,112 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+@import url('https://fonts.googleapis.com/css?family=Hind');
 
+* {
+  box-sizing: border-box;
+}
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Hind', sans-serif;
+  background: #EBEBEB
+}
+
+.tweet{
+  text-align: right;
+  top: 26px;
+  right: 26px;
+
+}
+h1 a {
+  color: #2E4D43;
+  text-decoration: none;
+  border-bottom: 0;
 
 }
 
-.smoothie-background {
+a {
+  color: #DDD6D3;
+}
 
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size:cover;
-  height: 130px;
-  // <%= assest_path 'dennis-klein-123624.jpg' %>;
-  background-image: url('fruits.jpg');
+a:hover {
+  color: #DDD6D3;
+}
 
+img {
+  display: block;
+  width: 100%;
+  border: 6px solid #C4D0CD;
+}
+
+section {
+  margin: 2rem 3rem;
+}
+
+h1 {
+  font-size: 4rem;
+  text-transform: uppercase;
+  margin: 2rem 3rem;
+  border-bottom: 1px solid #BBB;
+  text-align: left;
+
+}
+
+h2 {
+  font-size: 3rem;
+  margin: 0 0 0 15px;
+  text-transform: uppercase;
+  color: #102F25;
+}
+
+h3 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  margin: 2rem 0 0 0;
+  line-height: 0.5;
+}
+
+.responsive ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
+  grid-gap: 1rem;
+}
+
+.responsive2 ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 2fr 2fr 2fr 2fr 400px));
+  grid-gap: 1rem;
+}
+
+ul {
+  list-style: none;
+  margin: 0rem;
+  padding: 1rem;
+
+}
+
+li {
+  background: #DDD6D3;
+  padding: 1rem;
+
+}
+li:nth-child(1) {
+  grid-column: span 2;}
+
+
+
+li:nth-child(2) {
+  background-color: #718879;
+  grid-column: span 1;
+
+}
+li:nth-child(3){
+  background-color: #B5AEAB;
+  grid-row: span 3;
+
+}
+
+
+li:nth-child(5){
+  background-color: #718879;
 }
