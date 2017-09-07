@@ -27,42 +27,14 @@
     </div>
   </div>
 
-
-  <!-- <nav class="nav"> <span></span>
-    <div class=home><h4><a href="default.asp">Home</a></h4>
-      <div class=projects><h4><a href="/projects/">Projects</a> </h4>
-        <div class=contact><h4><a href="/contact me/">Contact Me</a></h4>
-        </div>
+    <div class="nav-container">
+      <div class="nav">
+        <a href="home">Home</a>
+        <a href="about">About</a>
+        <a href="projects">Projects</a>
+        <a href="contact">Contact</a>
       </div>
     </div>
-  </nav> -->
-
-  <div id="nav-bar">
-
-  <div class="nav-container">
-    <div class="nav">
-    </div>
-
-    <ul class="nav-list">
-      <li class="active">
-        <a data-title="home">Home</a>
-      </li>
-      <li>
-        <a data-title="about">About</a>
-      </li>
-      <li>
-        <a data-title="projects">Projects</a>
-      </li>
-      <li>
-        <a data-title="contact">Contact</a>
-      </li>
-    </ul>
-
-  </div>
-
-
-
-
 
         <ul class="grid-container">
           <li class="li1">
@@ -84,31 +56,39 @@
               spirit for growing business.</p> <p>Prior to migrating to Australia I owned my own coaching business where I worked with Price Waterhouse Coopers to design and deliver coaching programs to initiate change management. <br></br><a href="#">View more.</a> </p> -->
           </li>
           <li class="li3"> <img src="">
-            <h3>Follow Me</h3>
-            <p> Find me as @tracykaur on twitter and other sites.</p>
-              <div class="tweet"> <%= link_to "https://twitter.com/tracykaur", target: :_blank do %> <%= image_tag "002-social-network.svg", class: "tweet", alt: "Twitter" %> <% end %>
-                <div class="linkedin"> <%= link_to "https://www.linkedin.com/in/tracy-kaur-31797692/", target: :_blank do %> <%= image_tag "003-linkedin-logo.svg", class: "linkedin", alt: "linkedin" %> <% end %>
-                  <div class="github"> <%= link_to "https://github.com/tracykaur", target: :_blank do %> <%= image_tag "001-square.svg", class: "github", alt: "github" %> <% end %>
-                    <div class="medium"> <%= link_to "https://medium.com/@tracykaur", target: :_blank do %> <%= image_tag "medium.svg", class: "github", alt: "github" %> <% end %>
-                      <div><a href="http://www.freepik.com" title="Freepik"></a><a href="https://www.flaticon.com/" title="Flaticon"></a><a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank"></a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+
             </li>
 
           <li class="li4"> <img src="">
-            <h3>My Coding Groups:</h3>
-            <p> ~Sunshine Coast Dojo Mentor</p> ~Women in STEMM in the Sunshine State</p><p> ~Women Who Code Brisbane</p><p> ~NodeGirls Brisbane</p> </li></a>
+            <h3> My Coding Groups: </h3>
+            <p> Sunshine Coast Dojo Mentor<br></br> Women in STEMM in the Sunshine State<br></br> Women Who Code Brisbane<br></br> NodeGirls Brisbane</p> </li></a>
 
           <li class="li5"> <%= image_tag"Screen Shot 2017-09-07 at 1.08.48 am"%>
             <h3>Skills </h3>
-            <p> I am a full stack developer with skills in html, css, ruby on rails, and python. <a href="#">View Projects
+            <p> I am a full stack developer with skills in html, css, ruby on rails, and python. <a href="#">View Projects</p>
 
             </li>
 
         </ul>
+
+        <div class="footer-container">
+          <div class="footer">
+            <div class="tweet"> <%= link_to "https://twitter.com/tracykaur", target: :_blank do %> <%= image_tag "002-social-network.svg", class: "tweet", alt: "Twitter" %> <% end %>
+            </div>
+            <div class="linkedin"> <%= link_to "https://www.linkedin.com/in/tracy-kaur-31797692/", target: :_blank do %> <%= image_tag "003-linkedin-logo.svg", class: "linkedin", alt: "linkedin" %> <% end %>
+            </div>
+            <div class="github"> <%= link_to "https://github.com/tracykaur", target: :_blank do %> <%= image_tag "001-square.svg", class: "github", alt: "github" %> <% end %>
+            </div>
+            <div class="medium"> <%= link_to "https://medium.com/@tracykaur", target: :_blank do %> <%= image_tag "medium.svg", class: "github", alt: "medium" %> <% end %>
+            </div>
+            <div><a href="http://www.freepik.com" title="Freepik"></a><a href="https://www.flaticon.com/" title="Flaticon"></a><a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank"></a>
+            </div>
+          </div>
+        </div>
+
+
+
+
       <!-- </section>
 
       <section class="responsive2">

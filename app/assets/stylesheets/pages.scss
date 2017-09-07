@@ -64,11 +64,24 @@ h3 {
   text-align: left;
 }
 
-.nav {
+.nav-container {
     margin:18px;
     border:solid #C4D0CD;
+    border-radius: 15px;
     font-size: 20px;
+    padding: 15px;
+    border-width: thick;
 }
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px ;
+}
+.nav a {
+  text-decoration: none;
+}
+
+
 
 
 .home{
@@ -86,6 +99,7 @@ text-align: left;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
   grid-gap: 1rem;
+
 }
 
 .responsive2 ul {
@@ -131,6 +145,8 @@ li {
   padding: 1rem;
   list-style: none;
   display: inline;
+  border-radius: 15px;
+
 }
 .li4{
 }
@@ -159,4 +175,20 @@ li {
 .li5:nth-child(5){
   background-color: #718879;
   grid-row: span 1;
+}
+.footer-container {
+    margin:18px;
+    border:solid #C4D0CD;
+    border-radius: 15px;
+    font-size: 20px;
+    padding: 15px;
+    border-width: thick;
+}
+.footer {
+  display: flex;
+  justify-content: space-around;
+}
+.footer a {
+  text-decoration: none;
+
 }
