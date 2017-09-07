@@ -29,46 +29,15 @@
 
   <div class="nav-container">
     <div class="nav">
-      <a href="home">Home</a>
+      <a href="/">Home</a>
       <a href="about">About</a>
       <a href="projects">Projects</a>
-      <a href="contact">Contact</a>
+      <a href="#footer">Follow</a>
     </div>
   </div>
 
-  <ul class="grid-container">
-    <li class="li1">
-    <div class="plant"> <%= image_tag ("jazmin-quaynor-105210.jpg"), class: "plant" %>
-      <h3>Coding is magic</h3>
-      <p>I have an immense love for coding. I want to use code to create impactful tools that make our world a better place.</p>              <!-- If you want that the lights of your room should automatically be switched off as soon as you leave the room , if you want your mobile phone to automatically send emails and messages , even if you want to make a robot for yourself to do all the hard work , everything seems possible when you know how to program.</p> -->
-      <p> <a href="">View more.</a></p>
-    </div>
-    </li>
-
-    <li class="li2"> <%= image_tag "laptop-notebook-computer-macbook-mac-work-608650-pxhere.com.jpg"%>
-      <h3>About me </h3>
-      <p> I am a mum that codes.</p>
-      <p> Sharing my knowledge and providing others with access to technological skills that allow them to take control of their life is my why I code.</p>
-      <p><a href="/about/">Find out more about me</a></p>
-            <!-- <p>As a P-10 qualified teacher I am passionate about sharing learning to maximise growth. I love volunteering in coding classes. I am sales savvy with 12 years’ experience of exceeding my KPIs and having an entrepreneurial
-              spirit for growing business.</p> <p>Prior to migrating to Australia I owned my own coaching business where I worked with Price Waterhouse Coopers to design and deliver coaching programs to initiate change management. <br></br><a href="#">View more.</a> </p> -->
-    </li>
-
-    <li class="li3"> <img src="">
-    </li>
-
-    <li class="li4"> <img src="">
-      <h3> My Coding Groups: </h3>
-      <p> Sunshine Coast Dojo Mentor<br></br> Women in STEMM in the Sunshine State<br></br> Women Who Code Brisbane<br></br> NodeGirls Brisbane</p>
-    </li>
-
-    <li class="li5"> <%= image_tag"Screen Shot 2017-09-07 at 1.08.48 am"%>
-      <h3>Skills </h3>
-      <p> I am a full stack developer with skills in html, css, ruby on rails, and python. <a href="#">View Projects</p>
-    </li>
-  </ul>
-
-  <div class="footer-container">
+  <%=yield %>
+  <div class="footer-container" id="footer">
     <div class="footer">
       <div class="tweet"> <%= link_to "https://twitter.com/tracykaur", target: :_blank do %> <%= image_tag "002-social-network.svg", class: "tweet", alt: "Twitter" %> <% end %>
       </div>
