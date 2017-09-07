@@ -8,25 +8,12 @@
   <%= csrf_meta_tags %>
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
 
-  <title>This is Tracy Kaur. A web developer and promoter of women in tech.</title>
+  <title>Tracy Kaur. A web developer and promoter of women in tech.</title>
 
 </head>
 
 <body>
-
-  <div class="header">
-    <div class="wrapper">
-      <h1><a href="">Tracy Kaur </a></h1>
-      </div>
-    </div>
-  </div>
-
-  <section class="responsive">
-    <div class="developer">
-      <p> I'm a Full Stack Web Developer on a mission to help empower a more diverse range of tech engineers to enter and remain in tech.</p>
-    </div>
-  </div>
-
+<section class="responsive">
   <div class="nav-container">
     <div class="nav">
       <a href="/">Home</a>
@@ -35,6 +22,20 @@
       <a href="#footer">Follow</a>
     </div>
   </div>
+
+
+  <div class="header">
+    <div class="wrapper">
+      <h1><%= image_tag "Untitled3.jpg", class: "logo", alt: "Logo" %> <a href="Untitled.jpg" "/"></a>
+    </div>
+  </div>
+
+  <div class="developer">
+    <p> I'm a Full Stack Web Developer on a mission to help empower a more diverse range of tech engineers to enter and remain in tech.</p>
+  </div>
+
+
+
 
   <%=yield %>
   <div class="footer-container" id="footer">
@@ -51,6 +52,6 @@
       </div>
     </div>
   </div>
-
+</section>
 </body>
 </html>

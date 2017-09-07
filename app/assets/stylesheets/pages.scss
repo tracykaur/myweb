@@ -1,8 +1,6 @@
 // Place all the styles related to the Pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-
-
 * {
   box-sizing: border-box;
 }
@@ -16,7 +14,6 @@ body {
   width: 100%
   height 1fr;
 }
-
 
 h1 a {
   color: #2E4D43;
@@ -45,14 +42,14 @@ h1 {
   font-size: 4rem;
   text-transform: uppercase;
   margin: 2rem 3rem;
-  text-align: center;
 
 }
 
 .developer {
-  font-size: 1.5rem;
+  font-size: 22px;
   margin: 0 0 0 15px;
-  text-align: center;
+  text-align:center;
+  padding: 0 55px;
   color: #102F25;
 }
 
@@ -60,22 +57,25 @@ h3 {
   font-size: 1.5rem;
   text-transform: uppercase;
   margin: 2rem 0 0 0;
-  line-height: 0.5;
+  line-height: 1.5;
   text-align: left;
+}
+h4 {
+  line-height: 1.5;
 }
 
 .nav-container {
-    margin:18px;
-    border:solid #C4D0CD;
-    border-radius: 15px;
-    font-size: 20px;
-    padding: 15px;
-    border-width: thick;
+  margin:10px;
+  border:solid #C4D0CD;
+  border-radius: 15px;
+  font-size: 20px;
+  padding: 10px;
+  border-width:thin;
 }
 .nav {
   display: flex;
-  justify-content: space-between;
-  padding: 0 20px ;
+  justify-content: space-around;
+  padding: 10px 10px ;
 }
 .nav a {
   text-decoration: none;
@@ -87,38 +87,42 @@ h3 {
   grid-gap: 1rem;
 }
 
-.responsive2 ul {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 2fr 2fr 2fr 2fr 400px));
-  grid-gap: 1rem;
-}
-
 ul {
   margin: 0rem;
   padding: 1rem;
 }
 
 .tweet{
-width:60px;
-height:60px;
-margin-bottom: 5px}
+  width:50px;
+  height:50px;
+  margin-bottom: 5px
+}
 
 .linkedin{
-width:60px;
-height:60px;
-margin-bottom: 5px}
+  width:50px;
+  height:50px;
+  margin-bottom: 5px
+}
 
 .github{
-width:60px;
-height:60px;
-margin-bottom: 5px;
-
+  width:50px;
+  height:50px;
+  margin-bottom: 5px;
 }
 
 .medium{
-width:60px;
-height:60px;
-margin-bottom: 5px;
+  width:50px;
+  height:50px;
+  margin-bottom: 5px;
+}
+
+.logo{
+  width:200px;
+  height:200px;
+  border: none;
+  margin-left: auto;
+  margin-right: auto;
+
 }
 
 li {
@@ -128,6 +132,7 @@ li {
   display: inline;
   border-radius: 15px;
 }
+
 .li1:nth-child(1) {
   background-color: #718879;
   grid-column: span 2;
@@ -141,6 +146,7 @@ li {
 .li3:nth-child(3){
   background-color: #B5AEAB;
   grid-row: span 1;
+  font-size: 26px;
 }
 
 .li4:nth-child(4){
@@ -152,20 +158,26 @@ li {
   background-color: #718879;
   grid-row: span 1;
 }
+
+.grid-container{
+  font-size: 24px;
+}
+
 .footer-container {
-    margin:18px;
+    margin:10px;
     border:solid #C4D0CD;
     border-radius: 15px;
     font-size: 20px;
-    padding: 15px;
-    border-width: thick;
+    padding: 10px;
+    border-width: thin;
 }
+
 .footer {
   display: flex;
   justify-content: space-around;
   padding: 0 0 0 40px ;
 }
+
 .footer a {
   text-decoration: none;
-
 }
