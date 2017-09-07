@@ -2,67 +2,125 @@
 <html lang="en">
 
 <head>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   <%= csrf_meta_tags %>
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
-  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 
-  <title>Tracy Kaur</title>
+  <title>This is Tracy Kaur. A web developer and promoter of women in tech.</title>
 
 </head>
 
 <body>
-<header class="header"
+
+  <div class="header">
     <div class="wrapper">
-        <h1><a href="">Tracy Kaur</a>
-        </h1>
+      <h1><a href="">Tracy Kaur </a></h1>
       </div>
     </div>
-
-
-
+  </div>
 
   <section class="responsive">
-    <h2>Portfolio
-    </h2>
+    <div class="developer">
+      <p> I'm a Full Stack Web Developer on a mission to help empower a more diverse range of tech engineers to enter and remain in tech.</p>
+    </div>
+  </div>
 
-  <ul class="grid-container">
-    <li class="li1" > <img src="assets/images/jazmin-quaynor-105210.jpg">
-      <h3>Coding is magic</h3> <h4>I have an immense love for coding and the reason is being able to code is like having a supernatural power, you can literally create anything from scratch.<br></br> It’s crazy how few lines of code can make a machine do anything we want. </h4>
-        <!-- If you want that the lights of your room should automatically be switched off as soon as you leave the room , if you want your mobile phone to automatically send emails and messages , even if you want to make a robot for yourself to do all the hard work , everything seems possible when you know how to program.</p> -->
-        <p> <a href="">View more.</a></p>
-    </li>
-    <li class="li2"> <img src=""> <h3>Bootstrap</h3> <p> <a href="#">View more.</a></p>
-    </li>
-      <li class="li3"> <img src="">
-        <h3>Contact Me</h3>
-          <p><div class="tweet"> <a href="https://twitter.com/tracykaur"> <img src="twitter.png" style="width:50px;height:50px;"></p>
+
+  <!-- <nav class="nav"> <span></span>
+    <div class=home><h4><a href="default.asp">Home</a></h4>
+      <div class=projects><h4><a href="/projects/">Projects</a> </h4>
+        <div class=contact><h4><a href="/contact me/">Contact Me</a></h4>
+        </div>
+      </div>
+    </div>
+  </nav> -->
+
+  <div id="nav-bar">
+
+  <div class="nav-container">
+    <div class="nav">
+    </div>
+
+    <ul class="nav-list">
+      <li class="active">
+        <a data-title="home">Home</a>
       </li>
-      <li class="li4"> <img src="">
-        <h3>Work Title</h3>
-        <p> <a href="#">View more.</a></p>
+      <li>
+        <a data-title="about">About</a>
       </li>
-      <li class="li5"> <img src="">
-        <h3>Ruby</h3>
-        <p> <a href="#">View more.</a></p>
+      <li>
+        <a data-title="projects">Projects</a>
       </li>
-
-
-    </ul>
-  </section>
-
-  <section class="responsive2">
-
-    <ul class="grid-container">
-      <li>Volunteer Work <img src=""></li>
-
-      <li> Clubs<img src=""></li>
-
-      <li> Awards <img src=""> </li>
-
-      <li> <img src=""> </li>
-
+      <li>
+        <a data-title="contact">Contact</a>
+      </li>
     </ul>
 
-  </section>
+  </div>
+
+
+
+
+
+        <ul class="grid-container">
+          <li class="li1">
+              <div class="plant">
+                <%= image_tag ("jazmin-quaynor-105210.jpg"), class: "plant" %>
+                <h3>Coding is magic</h3>
+                <p>I have an immense love for coding. I want to use code to create impactful tools that make our world a better place.</p>              <!-- If you want that the lights of your room should automatically be switched off as soon as you leave the room , if you want your mobile phone to automatically send emails and messages , even if you want to make a robot for yourself to do all the hard work , everything seems possible when you know how to program.</p> -->
+              <p> <a href="">View more.</a></p>
+            </div>
+          </li>
+
+          <li class="li2"> <%= image_tag "laptop-notebook-computer-macbook-mac-work-608650-pxhere.com.jpg"%>
+            <h3>About me </h3>
+            <p> I am a mum that codes.</p>
+            <p> Sharing my knowledge and providing others with access to technological skills that allow them to take control of their life is my why I code.</p>
+            <p><a href="/about/">Find out more about me</a></p>
+
+            <!-- <p>As a P-10 qualified teacher I am passionate about sharing learning to maximise growth. I love volunteering in coding classes. I am sales savvy with 12 years’ experience of exceeding my KPIs and having an entrepreneurial
+              spirit for growing business.</p> <p>Prior to migrating to Australia I owned my own coaching business where I worked with Price Waterhouse Coopers to design and deliver coaching programs to initiate change management. <br></br><a href="#">View more.</a> </p> -->
+          </li>
+          <li class="li3"> <img src="">
+            <h3>Follow Me</h3>
+            <p> Find me as @tracykaur on twitter and other sites.</p>
+              <div class="tweet"> <%= link_to "https://twitter.com/tracykaur", target: :_blank do %> <%= image_tag "002-social-network.svg", class: "tweet", alt: "Twitter" %> <% end %>
+                <div class="linkedin"> <%= link_to "https://www.linkedin.com/in/tracy-kaur-31797692/", target: :_blank do %> <%= image_tag "003-linkedin-logo.svg", class: "linkedin", alt: "linkedin" %> <% end %>
+                  <div class="github"> <%= link_to "https://github.com/tracykaur", target: :_blank do %> <%= image_tag "001-square.svg", class: "github", alt: "github" %> <% end %>
+                    <div class="medium"> <%= link_to "https://medium.com/@tracykaur", target: :_blank do %> <%= image_tag "medium.svg", class: "github", alt: "github" %> <% end %>
+                      <div><a href="http://www.freepik.com" title="Freepik"></a><a href="https://www.flaticon.com/" title="Flaticon"></a><a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank"></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+          <li class="li4"> <img src="">
+            <h3>My Coding Groups:</h3>
+            <p> ~Sunshine Coast Dojo Mentor</p> ~Women in STEMM in the Sunshine State</p><p> ~Women Who Code Brisbane</p><p> ~NodeGirls Brisbane</p> </li></a>
+
+          <li class="li5"> <%= image_tag"Screen Shot 2017-09-07 at 1.08.48 am"%>
+            <h3>Skills </h3>
+            <p> I am a full stack developer with skills in html, css, ruby on rails, and python. <a href="#">View Projects
+
+            </li>
+
+        </ul>
+      <!-- </section>
+
+      <section class="responsive2">
+
+        <ul class="grid-container">
+          <li class="li6">Volunteer Work <p>Coding Dojo as it is important that every child is digitally literate in order to thrive and succeed in an increasingly digital world.</p><img src=""></li>
+
+          <li class="li7">Coding Groups I attend<img src=""><p> Sunshine Coast Dojo Mentor</p><p> Women in STEMM in the Sunshine State</p><p> Women Who Code Brisbane</p><p> NodeGirls Brisbane</p><img src=""></li>
+
+          <li class="li8"> Awards <img src=""> </li>
+
+        </ul>
+
+      </section> -->
+    </body>
