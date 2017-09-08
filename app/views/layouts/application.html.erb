@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway|Roboto" rel="stylesheet">
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   <%= csrf_meta_tags %>
@@ -26,7 +26,9 @@
 
   <div class="header">
     <div class="wrapper">
-      <h1><%= image_tag "Untitled3.jpg", class: "logo", alt: "Logo" %> <a href="Untitled.jpg" "/"></a>
+      <%= image_tag "TK Logo.svg", class: "logo", alt: "Logo"%>
+      <%= image_tag "TK Logo Text.svg", class: "logo name", alt: "Logo Name"%>
+
     </div>
   </div>
 
@@ -34,10 +36,9 @@
     <p> I'm a Full Stack Web Developer on a mission to help empower a more diverse range of tech engineers to enter and remain in tech.</p>
   </div>
 
-
-
-
   <%=yield %>
+
+
   <div class="footer-container" id="footer">
     <div class="footer">
       <div class="tweet"> <%= link_to "https://twitter.com/tracykaur", target: :_blank do %> <%= image_tag "002-social-network.svg", class: "tweet", alt: "Twitter" %> <% end %>
