@@ -6,7 +6,10 @@
 }
 
 .iestyling {
-  background-color: red !important;
+  .li1:nth-child(1) {
+    background-color: #718879;
+    width: 100%;
+  }
 }
 
 body {
