@@ -6,6 +6,8 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   <%= csrf_meta_tags %>
+  <%= render 'application/favicon' %>
+
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
 
   <title>Tracy Kaur. A web developer and promoter of women in tech.</title>
@@ -26,16 +28,13 @@
 
   <div class="header">
     <div class="wrapper">
-      <%= image_tag "TK Logo.svg", class: "logo", alt: "Logo"%>
+      <%= image_tag "TK_Logo.svg", class: "logo", alt: "Logo"%>
       <%= image_tag "TK Logo Text.svg", class: "logo name", alt: "Logo Name"%>
-
+      <div class="developer">
+      <h4> I'm a Full Stack Web Developer on a mission to help empower a more diverse range of tech engineers to enter and remain in tech.</h4>
+      </div>
     </div>
-  </div>
-
-  <div class="developer">
-    <p> I'm a Full Stack Web Developer on a mission to help empower a more diverse range of tech engineers to enter and remain in tech.</p>
-  </div>
-
+</div>
   <%=yield %>
 
 
