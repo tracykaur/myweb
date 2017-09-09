@@ -11,7 +11,7 @@
   }
   .grid-container li {
     width: 100%;
-    background-color: red;
+    background-color: #efefef;
   }
 }
 
@@ -59,10 +59,13 @@ h1 {
   font-size: 22px;
   margin: 0 15px 0 15px;
   text-align:center;
+  border-radius: 15px;
   padding: 0 55px;
   color: #2e4d43;
-  // border:solid #C4D0CD;
-  // border-width:thin;
+  -moz-box-shadow: 1px 1px 3px 2px #2e4d43;
+  -webkit-box-shadow: 1px 1px 3px 2px #2e4d43;
+  box-shadow:         1px 1px 3px 2px #2e4d43;
+
 }
 
 h3 {
@@ -84,6 +87,9 @@ h4 {
   font-size: 20px;
   padding: 10px;
   border-width:thin;
+  -moz-box-shadow: 1px 1px 3px 2px #c4d0cd;
+  -webkit-box-shadow: 1px 1px 3px 2px #c4d0cd;
+  box-shadow:         1px 1px 3px 2px #c4d0cd;
 }
 .nav {
   display: flex;
@@ -156,6 +162,7 @@ li {
 .li2:nth-child(2) {
   background-color: #DDD6D3;
   grid-column: span 1;
+  border-radius: 15px;
 }
 
 .li3:nth-child(3){
@@ -165,13 +172,14 @@ li {
 }
 
 .li4:nth-child(4){
-  background-color: #B5AEAB;
+  background-color: #DDD6D3;
   grid-row: span 1;
 }
 
 .li5:nth-child(5){
   background-color: #718879;
   grid-row: span 1;
+
 }
 
 .grid-container{
@@ -185,6 +193,9 @@ li {
     font-size: 20px;
     padding: 10px;
     border-width: thin;
+    -moz-box-shadow: 1px 1px 3px 2px #c4d0cd;
+    -webkit-box-shadow: 1px 1px 3px 2px #c4d0cd;
+    box-shadow:         1px 1px 3px 2px #c4d0cd;
 }
 
 .footer {
