@@ -19,6 +19,7 @@ body {
   font-family: 'Raleway', sans-serif;
   font-family: 'Roboto', sans-serif;
   background: #efefef;
+  color:#2E4D43;
 }
 
 .plant{
@@ -206,4 +207,10 @@ li {
 
 .footer a {
   text-decoration: none;
+}
+
+.copyright{
+  display: flex;
+  font-size: 8px;
+  justify-content:flex-end;
 }
