@@ -107,28 +107,10 @@ ul {
   padding: 1rem;
 }
 
-.tweet{
+.icons{
   width:50px;
   height:50px;
-  margin-bottom: 5px
-}
-
-.linkedin{
-  width:50px;
-  height:50px;
-  margin-bottom: 5px
-}
-
-.github{
-  width:50px;
-  height:50px;
-  margin-bottom: 5px;
-}
-
-.medium{
-  width:50px;
-  height:50px;
-  margin-bottom: 5px;
+  margin:10px
 }
 
 .logo{
@@ -172,7 +154,6 @@ li {
 .li5:nth-child(5){
   background-color: #718879;
   grid-row: span 1;
-
 }
 
 .grid-container{
@@ -184,7 +165,6 @@ li {
     border:solid #C4D0CD;
     border-radius: 15px;
     font-size: 20px;
-    padding: 10px;
     border-width: thin;
     -moz-box-shadow: 1px 1px 3px 2px #c4d0cd;
     -webkit-box-shadow: 1px 1px 3px 2px #c4d0cd;
@@ -196,12 +176,13 @@ li {
   justify-content: space-around;
 }
 
+.footer img{
+}
+
 .footer a {
   text-decoration: none;
 }
 
 .copyright{
-  display: flex;
   font-size: 8px;
-  justify-content:flex-end;
 }
